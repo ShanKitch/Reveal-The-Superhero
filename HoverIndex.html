@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="HoverStyle.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+        <title>Reveal The Superhero</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').hover(function() {
+                    $(this).attr('blankspace', $(this).attr('src'));
+                    $(this).attr('src', $(this).attr('data-alt-src'));
+                    $(this).attr('data-alt-src', $(this).attr('blankspace'));
+                })
+                }) 
+
+        </script>
+    </head>
+<body>
+    <div id="wrapper">
+        <h1>Hover Over Each Picture to Reveal Their Secret Identity!</h1>
+        <img src="peterparker.jpg" data-alt-src='spiderman.jpg'/>
+        <img src="clarkkent.jpg" data-alt-src='superman.jpg'/>
+        <img src="brucebanner.jpg" data-alt-src='hulk.jpg'/>
+        <img src="brucewayne.jpg" data-alt-src='batman.jpg'/>
+    </div>  
+</body>  
+</html>  

@@ -1,0 +1,22 @@
+#wrapper{
+    width: 1700px;
+    height: 1000px;
+    background:linear-gradient(to right, red,blue,green,black);
+    margin-left:100px
+}
+
+img{
+    width:350px;
+    height:400px;
+    display:inline-block;
+    margin-left:56px;
+    margin-top:75px;
+}
+h1{
+    font-family:'Bangers';
+    font-size:60pt;
+    color:white;
+    text-align: center;
+    padding-top: 75px;
+    text-shadow:2px 2px black;
+}
